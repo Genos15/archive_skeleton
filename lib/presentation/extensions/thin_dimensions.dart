@@ -16,4 +16,7 @@ mixin ThinDimensions {
   double get cardElevation => 16.0;
 
   Widget get spacePage => SizedBox(width: pagePadding, height: pagePadding);
+
+  Widget get sliverSpacePage => SliverToBoxAdapter(child: spacePage);
+
 }

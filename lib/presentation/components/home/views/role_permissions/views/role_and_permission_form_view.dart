@@ -1,6 +1,6 @@
 import 'package:archive_skeleton/presentation/extensions/thin_dimensions.dart';
 import 'package:fluent_ui/fluent_ui.dart';
-import 'package:flutter/material.dart' as Mat;
+import 'package:flutter/material.dart' as mat;
 
 class RoleAndPermissionFormView extends StatelessWidget with ThinDimensions {
   const RoleAndPermissionFormView({Key? key}) : super(key: key);
@@ -61,8 +61,8 @@ class RoleAndPermissionFormView extends StatelessWidget with ThinDimensions {
               ],
             ),
             spacePage,
-            Mat.Divider(
-              color: Mat.Theme.of(context).dividerTheme.color,
+            mat.Divider(
+              color: mat.Theme.of(context).dividerTheme.color,
             )
           ],
         ),
