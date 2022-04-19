@@ -5,6 +5,7 @@ import 'package:ionicons/ionicons.dart';
 import '../../../di/setup_service_locator.dart';
 import '../login/repository/auth_repository.dart';
 import '../template/template_body_view.dart';
+import 'views/boxes/pane_boxes_home_view.dart';
 import 'views/pane_members_body_view.dart';
 
 class HomeNavigationView extends StatefulWidget {
@@ -71,7 +72,7 @@ class _HomeNavigationViewState extends State<HomeNavigationView> {
         ),
         children: const [
           PaneMembersBodyView(),
-          TemplateBodyView(),
+          PaneBoxesHomeView(),
           TemplateBodyView(),
           TemplateBodyView(),
           TemplateBodyView(),

@@ -47,12 +47,12 @@ class _LoginFormState extends State<LoginForm> with ThinDimensions, ThinColors {
                   'Welcome back',
                   style: TextStyle(color: Colors.grey),
                 ),
-                _space,
+                spacePage,
                 const Text(
                   'Log into your account',
                   style: TextStyle(fontSize: 24),
                 ),
-                _space,
+                spacePage,
                 TextFormBox(
                   header: 'E-mail or Username',
                   placeholder: 'Enter your e-mail or username',
@@ -65,7 +65,7 @@ class _LoginFormState extends State<LoginForm> with ThinDimensions, ThinColors {
                   padding: EdgeInsets.all(buttonPadding),
                   enableSuggestions: false,
                 ),
-                _space,
+                spacePage,
                 TextFormBox(
                   header: 'Password',
                   placeholder: 'Enter your password',
@@ -91,7 +91,7 @@ class _LoginFormState extends State<LoginForm> with ThinDimensions, ThinColors {
                   ),
                   padding: EdgeInsets.all(buttonPadding),
                 ),
-                _space,
+                spacePage,
                 FilledButton(
                   child: const SizedBox(
                     child: Text('Login now'),
@@ -105,7 +105,7 @@ class _LoginFormState extends State<LoginForm> with ThinDimensions, ThinColors {
                     padding: ButtonState.all(EdgeInsets.all(buttonPadding)),
                   ),
                 ),
-                _space,
+                spacePage,
                 SizedBox(
                   width: double.maxFinite,
                   child: RichText(
@@ -140,6 +140,4 @@ class _LoginFormState extends State<LoginForm> with ThinDimensions, ThinColors {
       elevation: cardElevation,
     );
   }
-
-  Widget get _space => SizedBox.fromSize(size: Size.fromHeight(contentPadding));
 }

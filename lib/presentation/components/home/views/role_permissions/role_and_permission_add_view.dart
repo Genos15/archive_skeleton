@@ -11,13 +11,6 @@ class RoleAndPermissionAddView extends StatelessWidget with ThinDimensions {
     return SizedBox.expand(
       child: CustomScrollView(
         slivers: [
-          SliverToBoxAdapter(
-            child: Text(
-              'Role',
-              style: FluentTheme.maybeOf(context)?.typography.subtitle,
-            ),
-          ),
-          sliverSpacePage,
           const SliverToBoxAdapter(child: RoleAndPermissionFormView()),
           sliverSpacePage,
           SliverToBoxAdapter(

@@ -19,7 +19,7 @@ class MembersListView extends StatelessWidget with ThinDimensions {
             childAspectRatio: 4,
             crossAxisSpacing: 15,
             mainAxisSpacing: 15,
-            children: [for (var i = 0; i < 40; i++) const MembersCardView()],
+            children: [for (var i = 0; i < 37; i++) const MembersCardView()],
           ),
         ],
       ),

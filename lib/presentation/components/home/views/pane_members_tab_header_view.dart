@@ -2,8 +2,8 @@ import 'package:fluent_ui/fluent_ui.dart';
 import 'package:ionicons/ionicons.dart';
 
 import '../../../extensions/thin_dimensions.dart';
-import 'role_permissions/role_and_permission_add_view.dart';
 import 'role_permissions/views/members_list_view.dart';
+import 'role_permissions/views/roles_list_view.dart';
 
 class PaneMembersTabHeaderView extends StatefulWidget {
   const PaneMembersTabHeaderView({Key? key}) : super(key: key);
@@ -54,7 +54,7 @@ class _PaneMembersTabHeaderViewState extends State<PaneMembersTabHeaderView>
           ),
           Padding(
             padding: EdgeInsets.all(pagePadding),
-            child: const RoleAndPermissionAddView(),
+            child: const RolesListView(),
           ),
         ],
       ),

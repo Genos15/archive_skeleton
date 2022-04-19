@@ -1,6 +1,6 @@
 import 'package:fluent_ui/fluent_ui.dart';
 
-import 'pane_members_app_bar_view.dart';
+import 'pane_app_bar_view.dart';
 import 'pane_members_tab_header_view.dart';
 
 class PaneMembersBodyView extends StatelessWidget {
@@ -11,7 +11,10 @@ class PaneMembersBodyView extends StatelessWidget {
     return NestedScrollView(
       headerSliverBuilder: (BuildContext context, bool innerBoxIsScrolled) {
         return [
-          const PaneMembersAppBarView(),
+          const PaneAppBarView(
+            title: "Members room",
+            subtitle: "Social Intents",
+          ),
         ];
       },
       body: const PaneMembersTabHeaderView(),

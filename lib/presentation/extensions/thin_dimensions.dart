@@ -13,7 +13,7 @@ mixin ThinDimensions {
 
   BorderRadius get buttonBorderRadius => BorderRadius.circular(4.0);
 
-  double get cardElevation => 16.0;
+  double get cardElevation => 8.0;
 
   Widget get spacePage => SizedBox(width: pagePadding, height: pagePadding);
 

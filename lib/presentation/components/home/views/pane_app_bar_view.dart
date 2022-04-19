@@ -2,8 +2,12 @@ import 'package:archive_skeleton/presentation/extensions/thin_dimensions.dart';
 import 'package:fluent_ui/fluent_ui.dart';
 import 'package:flutter/material.dart' as mat;
 
-class PaneMembersAppBarView extends StatelessWidget with ThinDimensions {
-  const PaneMembersAppBarView({Key? key}) : super(key: key);
+class PaneAppBarView extends StatelessWidget with ThinDimensions {
+  final String title;
+  final String? subtitle;
+
+  const PaneAppBarView({Key? key, required this.title, this.subtitle})
+      : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -19,13 +23,14 @@ class PaneMembersAppBarView extends StatelessWidget with ThinDimensions {
               children: [
                 RichText(
                   text: TextSpan(
-                    text: 'Members room',
+                    text: title,
                     style: FluentTheme.of(context).typography.title,
                     children: [
-                      TextSpan(
-                        text: '\nSocial Intents',
-                        style: FluentTheme.of(context).typography.caption,
-                      )
+                      if (subtitle != null && subtitle!.isNotEmpty)
+                        TextSpan(
+                          text: '\n$subtitle',
+                          style: FluentTheme.of(context).typography.caption,
+                        )
                     ],
                   ),
                 ),
